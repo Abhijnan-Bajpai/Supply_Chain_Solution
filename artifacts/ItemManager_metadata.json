@@ -126,11 +126,11 @@
 	},
 	"sources": {
 		"Management.sol": {
-			"keccak256": "0x78f09a991ff877bbdeb501f7440bc3c9810cbbc7e319dbb3a00aab4503fe581e",
+			"keccak256": "0xba7395ac73f3dad45c210eabc02199ad822310d67b16d118b48e215beca14ad6",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://7ada97f2b32cdfcba5fdcf5e6214ced2933cc27ad28d430672a9939c1730497e",
-				"dweb:/ipfs/QmW5FhCUmUyLfhiY1LJTfuTJEBXs93fV8zMksFDZPEYfWy"
+				"bzz-raw://436b6a5b41b7d039de701a16352bd52bb3cae9f854082851a284d3832e178b71",
+				"dweb:/ipfs/QmTmPdxbyo4sXS8bYCHkhqRjkLYcWYDFGHweYSekayyLkY"
 			]
 		}
 	},
