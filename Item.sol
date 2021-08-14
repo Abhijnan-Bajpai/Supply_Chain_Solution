@@ -21,7 +21,7 @@ contract Item {
         require(msg.value == priceInWei, "No partial payments accepted");
         require(paidWei == 0, "Alread is already paid");
         paidWei += msg.value;
-        // Checks whether 
+        // Checks whether the delivery was complete
         (bool success, ) = address(parentContract).call{value: msg.value}(abi.encodeWithSignature("triggerPayment(uint256)", index));
         require(success, "Delivery did not work");
     }

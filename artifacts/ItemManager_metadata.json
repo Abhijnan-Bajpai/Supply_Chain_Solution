@@ -19,6 +19,12 @@
 						"internalType": "uint256",
 						"name": "step",
 						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
 					}
 				],
 				"name": "SupplyChainStep",
@@ -53,6 +59,11 @@
 				"name": "items",
 				"outputs": [
 					{
+						"internalType": "contract Item",
+						"name": "_item",
+						"type": "address"
+					},
+					{
 						"internalType": "enum ItemManager.SupplyChainSteps",
 						"name": "_step",
 						"type": "uint8"
@@ -61,11 +72,6 @@
 						"internalType": "string",
 						"name": "_identifier",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_priceInWei",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -125,12 +131,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"ItemManager.sol": {
-			"keccak256": "0xba7395ac73f3dad45c210eabc02199ad822310d67b16d118b48e215beca14ad6",
+		"Item.sol": {
+			"keccak256": "0x39cae8c87fbe35396b643c08b0931150413ddfbfc67b18b0a8d56c65c2be2b30",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://436b6a5b41b7d039de701a16352bd52bb3cae9f854082851a284d3832e178b71",
-				"dweb:/ipfs/QmTmPdxbyo4sXS8bYCHkhqRjkLYcWYDFGHweYSekayyLkY"
+				"bzz-raw://ac3c1964d8946482bd51a4bb61345fd5c78582b7d828ab5e5b2c4a650efa4f96",
+				"dweb:/ipfs/QmVbyVzDAJ1qP1PkLXJgHV7624WXCAYQo5wyxtMsPoyng5"
+			]
+		},
+		"ItemManager.sol": {
+			"keccak256": "0x36a1dd137a6e5ef8bb2c8862e1bd417144058aa792b00a900b7b1b55231536df",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://f68ca4f9a94f45c59f42a61b3f8ac1b1ff010117ca08cdf74367d811bbf5d0c7",
+				"dweb:/ipfs/QmURfdra6rFRcRqUVBk7HrxjPPvGpBwTxcXvVy7Xh7vSvm"
 			]
 		}
 	},
