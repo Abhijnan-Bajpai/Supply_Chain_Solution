@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ownable.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ownable.sol": {
+			"keccak256": "0xe62c1e4971171609381c7ddae98052aff03ae8b3085756c1888a79eb0351d4ff",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ac9c0cb3cbff36455b2a80aac3e9152f38118bbab75c9bc9c27cef708f89e018",
+				"dweb:/ipfs/QmcXYJxTSDq1KhZCUkMXbafrYULpGL6RP8axf6wsA55FCQ"
+			]
+		}
+	},
+	"version": 1
+}

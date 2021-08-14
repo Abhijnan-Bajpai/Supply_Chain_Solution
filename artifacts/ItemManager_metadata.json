@@ -31,6 +31,19 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "_owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -46,6 +59,19 @@
 				"name": "createItem",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -132,19 +158,27 @@
 	},
 	"sources": {
 		"Item.sol": {
-			"keccak256": "0x39cae8c87fbe35396b643c08b0931150413ddfbfc67b18b0a8d56c65c2be2b30",
+			"keccak256": "0xd80751e5f16022606c66db2b6dfe5dc27f60742a385304aac780b48b8f2393cc",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://ac3c1964d8946482bd51a4bb61345fd5c78582b7d828ab5e5b2c4a650efa4f96",
-				"dweb:/ipfs/QmVbyVzDAJ1qP1PkLXJgHV7624WXCAYQo5wyxtMsPoyng5"
+				"bzz-raw://9754967d49fa17a25ed33fc746d02968470c51896eacc0bfc2069111e7cae101",
+				"dweb:/ipfs/QmNPBbKpwHwruuBHCRHgZUfbqNevEgFBzwLys83RGvr1Kf"
 			]
 		},
 		"ItemManager.sol": {
-			"keccak256": "0x36a1dd137a6e5ef8bb2c8862e1bd417144058aa792b00a900b7b1b55231536df",
+			"keccak256": "0xe69d93fb169c1ffaf57439814096a37b3861be14481f00c5391d1fe10bb8f11c",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://f68ca4f9a94f45c59f42a61b3f8ac1b1ff010117ca08cdf74367d811bbf5d0c7",
-				"dweb:/ipfs/QmURfdra6rFRcRqUVBk7HrxjPPvGpBwTxcXvVy7Xh7vSvm"
+				"bzz-raw://7cca39efb497142956d011152ce64f1b8905d8ee4ad17a48fa127711b8e69509",
+				"dweb:/ipfs/QmfEUtYgJALY8q8SW55p5xAqB8QKpgBsLwaGcGv9CHbeA2"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0xe62c1e4971171609381c7ddae98052aff03ae8b3085756c1888a79eb0351d4ff",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://ac9c0cb3cbff36455b2a80aac3e9152f38118bbab75c9bc9c27cef708f89e018",
+				"dweb:/ipfs/QmcXYJxTSDq1KhZCUkMXbafrYULpGL6RP8axf6wsA55FCQ"
 			]
 		}
 	},

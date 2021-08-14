@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.6.0;
 
+import "./Ownable.sol";
 import "./Item.sol";
 
-contract ItemManager {
+contract ItemManager is Ownable {
     
     // Saves the present state of each item in the supply chain
     enum SupplyChainSteps{Created, Paid, Delivered}
@@ -23,7 +24,7 @@ contract ItemManager {
     event SupplyChainStep(uint _index, uint step, address _address);
     
     // Creating a new object by saving all the parameters of the item object
-    function createItem(string memory _identifier, uint _priceInWei) public {
+    function createItem(string memory _identifier, uint _priceInWei) public onlyOwner {
         // Creates an item object
         Item item = new Item(this, _priceInWei, index);
         items[index]._item = item;
@@ -46,7 +47,7 @@ contract ItemManager {
     }
     
     // Triggering delivery when the given conditions satisfy
-    function triggerDelivery(uint _index) public {
+    function triggerDelivery(uint _index) public onlyOwner {
         require(items[_index]._step == SupplyChainSteps.Paid, "Item further in supply chain");
         items[_index]._step = SupplyChainSteps.Delivered;
         emit SupplyChainStep(_index, uint(items[_index]._step), address(items[_index]._item));
