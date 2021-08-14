@@ -6,65 +6,37 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"internalType": "contract ItemManager",
+						"name": "_parentContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_priceInWei",
+						"type": "uint256"
+					},
+					{
 						"internalType": "uint256",
 						"name": "_index",
 						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "step",
-						"type": "uint256"
 					}
 				],
-				"name": "SupplyChainStep",
-				"type": "event"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_identifier",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_priceInWei",
-						"type": "uint256"
-					}
-				],
-				"name": "createItem",
-				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
-				"inputs": [
+				"stateMutability": "nonpayable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "index",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "items",
-				"outputs": [
-					{
-						"internalType": "enum ItemManager.SupplyChainSteps",
-						"name": "_step",
-						"type": "uint8"
-					},
-					{
-						"internalType": "string",
-						"name": "_identifier",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_priceInWei",
 						"type": "uint256"
 					}
 				],
@@ -72,30 +44,34 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "paidWei",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_index",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "triggerDelivery",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "priceInWei",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "_index",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "triggerPayment",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -111,7 +87,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ItemManager.sol": "ItemManager"
+			"Item.sol": "Item"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -125,6 +101,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"Item.sol": {
+			"keccak256": "0x4c10d45cb09af928b3cb25bb3931de56c2be4b44243f5286a5cbf5894eeee2c1",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://19e451b8b6efaec424d48f8ded3bf86f77d27c7f09647230e2f91b559d5c0de9",
+				"dweb:/ipfs/QmYqiysP5nagz5UNhLSMuH8utTDJWkK5rMKLSfSRpLKe7X"
+			]
+		},
 		"ItemManager.sol": {
 			"keccak256": "0xba7395ac73f3dad45c210eabc02199ad822310d67b16d118b48e215beca14ad6",
 			"license": "UNLICENSED",
